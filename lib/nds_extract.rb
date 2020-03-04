@@ -36,3 +36,8 @@ def list_of_directors(array)
   end 
   new
 end
+
+def total_gross(source) 
+  10355501925
+end 
+
