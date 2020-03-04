@@ -36,17 +36,3 @@ def list_of_directors(array)
   end 
   new
 end
-  
-def total_gross(array)  
-  grand_total = 0
-  i = 0 
-  while i < array.length do 
-    ii = 0 
-    while ii < array[i][:movies].length do 
-      grand_total += array[i][:movies][ii][:worldwide_gross]
-      ii += 1 
-    end 
-    i =+ 1 
-  end 
-  grand_total 
-end
