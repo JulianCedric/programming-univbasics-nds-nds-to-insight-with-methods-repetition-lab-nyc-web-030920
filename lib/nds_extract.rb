@@ -38,6 +38,17 @@ def list_of_directors(array)
 end
 
 def total_gross(source) 
+  
+  def list_of_directors(array)
+  array 
+  new = []
+  i = 0 
+  while i < array.length do 
+    new << array[i][:name] 
+    i += 1 
+  end 
+  new
+end
   10355501925
 end 
 
