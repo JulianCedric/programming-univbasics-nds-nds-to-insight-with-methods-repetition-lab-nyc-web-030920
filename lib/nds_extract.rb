@@ -24,20 +24,29 @@ def gross_for_director(d)
   total
 end
 
-def list_of_directors(source)
-  # Write this implementation
+stooges = [{:name => "Larry"}, {:name => "Curly"}, {:name => "Moe"}, {:name => "Iggy"}]
+
+def list_of_directors(array)
+  array 
+  new = []
+  i = 0 
+  while i < array.length do 
+    new << array[i][:name] 
+    i += 1 
+  end 
+  new
 end
-
-def total_gross(source)
-  # Write this implementation
-  #
-  # Should use methods:
-  # 1. directors_totals: returns a Hash of { dir_name => gross }
-  # 2. list_of_directors: names provides an Array of directors names (use
-  #
-  # Visit each key (i.e. director name), look up the value in the hash
-  # returned by directors_totals, and add it to a running total. When done,
-  # return the total
+  
+def total_gross(array)  
+  grand_total = 0
+  i = 0 
+  while i < array.length do 
+    ii = 0 
+    while ii < array[i][:movies].length do 
+      grand_total += array[i][:movies][ii][:worldwide_gross]
+      ii += 1 
+    end 
+    i =+ 1 
+  end 
+  grand_total 
 end
-
-
